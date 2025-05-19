@@ -1,0 +1,186 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8fb;
+    margin: 0;
+    padding: 0 10vw;
+    color: #222;
+}
+
+h1, h2 {
+    color: #0a3d62;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+ol {
+    background: #eaf6ff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+}
+
+form {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+}
+
+fieldset {
+    border: 1px solid #b2bec3;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #0984e3;
+}
+
+label {
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+select {
+    padding: 6px 10px;
+    border: 1px solid #b2bec3;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    width: 90%;
+    max-width: 260px;
+    transition: border 0.2s;
+}
+
+input:focus, select:focus {
+    border: 1.5px solid #0984e3;
+    outline: none;
+    background: #eaf6ff;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+th, td {
+    padding: 8px 6px;
+    text-align: left;
+}
+
+th {
+    background: #dff9fb;
+    color: #222f3e;
+}
+
+tr:nth-child(even) {
+    background: #f1f2f6;
+}
+
+input[type="submit"], button[type="reset"] {
+    background: #0984e3;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 22px;
+    font-size: 1rem;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+input[type="submit"]:hover, button[type="reset"]:hover {
+    background: #0a3d62;
+}
+
+footer {
+    text-align: center;
+    padding: 18px 0 8px 0;
+    background: #dff9fb;
+    color: #636e72;
+    border-top: 1px solid #b2bec3;
+    margin-top: 30px;
+}
+
+/* Interactivity: highlight required fields on focus */
+input:required:focus, select:required:focus {
+    background: #fffbe6;
+    border-color: #fdcb6e;
+}
+
+/* Interactivity: highlight invalid fields after submit */
+input:invalid {
+    border-color: #d63031;
+    background: #ffeaea;
+}
+
+/* Success/Error message styles */
+#form-message {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 18px 20px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    text-align: center;
+    transition: opacity 0.3s;
+}
+#form-message.success {
+    background: #d4f9e2;
+    color: #218c5a;
+    border: 1.5px solid #27ae60;
+}
+#form-message.error {
+    background: #ffeaea;
+    color: #d63031;
+    border: 1.5px solid #d63031;
+}
+.hidden {
+    display: none;
+}
+
+/* Shake animation for invalid form */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-8px); }
+    40% { transform: translateX(8px); }
+    60% { transform: translateX(-8px); }
+    80% { transform: translateX(8px); }
+    100% { transform: translateX(0); }
+}
+.shake {
+    animation: shake 0.4s;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+    body {
+        padding: 0 2vw;
+    }
+    form {
+        padding: 15px 5px;
+    }
+    table, th, td {
+        font-size: 0.95em;
+    }
+}

@@ -1,0 +1,323 @@
+<!--Web Development Week2 Assignment-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeronautical Engineers Association of Kenya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Aeronautical Engineers Association of Kenya</h1>
+    <img src="https://images.pexels.com/photos/358319/pexels-photo-358319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" Alt="Trans-continental Airliner" height="300" width="500">
+    <h2>Registration Requirements</h2>
+    <p>To be registered as a member of this association bringing together aviation professionals, you must present:</p>
+    <ol type = "i">    <!--ordered list and attribute type: i for roman numbering--> 
+        <li>Bachelor's degree or Diploma certificate from a recognized institution</li> <!--list item-->
+        <li>Original KCSE certificate</li>
+        <li>Valid Personal accident insurance cover</li>
+        <li>Copy of National ID</li>
+        <li>KCAA registration number</li>
+        <li>A minimum of 5 years experience in a busy aviation environment</li>
+        <li>Endorsement letter from current employer</li>
+        <li>Next of Kin contact details</li>
+        <li>At least two referees</li>
+    </ol>
+    <br><br>
+    <p>To register, fill in the form below to initiate the process. You will be contacted as soon as you submit your details to further review your documents</p>
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+        <fieldset>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd"> 
+        </fieldset>
+        <fieldset name="Personal_Details">
+            <legend>Personal Details</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+            <br><br>
+            <label for="mname">Middle Name:</label>
+            <input type="text" id="mname" name="mname" placeholder="Enter your middle name">
+            <br><br>
+            <label for="sname">Surname Name:</label>
+            <input type="text" id="sname" name="sname" placeholder="Enter your surname names" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your valid email address" required>
+            <br><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Physical Address">
+            <br><br>
+            <label for="phone">Tel. number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your work phone number" required>
+            <br><br>
+            <label for="license">KCAA License Number:</label>
+            <input type="text" id="license" name="license" placeholder="Enter AMEL number" required>
+            <br><br>
+            <label for="gender">Gender:</label> <!--Radio buttons for gender selection-->
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+            <input type="radio" name="gender" value="Prefer not to say">Prefer not to say
+            <br><br>
+            <label for="nationality">Nationality:</label>
+            <select name="nationality" id="nationality">    <!--Dropdown menu-->
+                <option>--Select nationality--</option>
+                <option value="Kenyan">Kenyan</option>
+                <option value="Ugandan">Ugandan</option>
+                <option value="Tanzanian">Tanzanian</option>
+                <option value="Ethiopian">Ethiopian</option>
+                <option value="Other">Other</option>
+            </select>
+            <br><br>
+            <label for="languages">Languages:</label>
+            <input type="checkbox" name="languages" value="English">English
+            <input type="checkbox" name="languages" value="Swahili">Swahili
+            <input type="checkbox" name="languages" value="French">French
+            <input type="checkbox" name="languages" value="Other">Other
+        </fieldset>
+        <br><br>
+        <fieldset name="Professional_Details">
+            <legend>Professional Details</legend>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>
+                            <label for="company">Company Name</label>
+                        </th>
+                        <th>
+                            <label for="role">Role</label>
+                        </th>
+                        <th>
+                            <label for="sdate">Start Date</label>
+                        </th>
+                        <th>
+                            <label for="edate">End Date</label>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="text" id="company" name="company" placeholder="Enter company name" required>
+                        </td>
+                        <td>
+                            <input type="text" id="role" name="role" placeholder="Enter your role in the company" required>
+                        </td>
+                        <td>
+                            <input type="date" id="sdate" name="sdate" placeholder="Enter start date" required>
+                        </td>
+                        <td>
+                            <input type="date" id="edate" name="edate" placeholder="Enter end date" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="company" name="company" placeholder="Enter company name">
+                        </td>
+                        <td>
+                            <input type="text" id="role" name="role" placeholder="Enter your role in the company">
+                        </td>
+                        <td>
+                            <input type="date" id="sdate" name="sdate" placeholder="Enter start date">
+                        </td>
+                        <td>
+                            <input type="date" id="edate" name="edate" placeholder="Enter end date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="company" name="company" placeholder="Enter company name">
+                        </td>
+                        <td>
+                            <input type="text" id="role" name="role" placeholder="Enter your role in the company">
+                        </td>
+                        <td>
+                            <input type="date" id="sdate" name="sdate" placeholder="Enter start date">
+                        </td>
+                        <td>
+                            <input type="date" id="edate" name="edate" placeholder="Enter end date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="company" name="company" placeholder="Enter company name">
+                        </td>
+                        <td>
+                            <input type="text" id="role" name="role" placeholder="Enter your role in the company">
+                        </td>
+                        <td>
+                            <input type="date" id="sdate" name="sdate" placeholder="Enter start date">
+                        </td>
+                        <td>
+                            <input type="date" id="edate" name="edate" placeholder="Enter end date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="company" name="company" placeholder="Enter company name">
+                        </td>
+                        <td>
+                            <input type="text" id="role" name="role" placeholder="Enter your role in the company">
+                        </td>
+                        <td>
+                            <input type="date" id="sdate" name="sdate" placeholder="Enter start date">
+                        </td>
+                        <td>
+                            <input type="date" id="edate" name="edate" placeholder="Enter end date">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>References</legend>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>
+                            <label for="name">Name</label>
+                        </th>
+                        <th>
+                            <label for="rcompany">Company</label>
+                        </th>
+                        <th>
+                            <label for="title">Title</label>
+                        </th>
+                        <th>
+                            <label for="email">Email</label>
+                        </th>
+                        <th>
+                            <label for="phone">Phone Number</label>
+                        </th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="text" id="name" name="name" placeholder="Enter name of referee" required>
+                        </td>
+                        <td>
+                            <input type="text" id="rcompany" name="rcompany" placeholder="Enter company of referee" required>
+                        </td>
+                        <td>
+                            <input type="text" id="title" name="title" placeholder="Enter position of referee" required>
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email" placeholder="Enter email of referee" required>
+                        </td>
+                        <td>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter tel. number of referee" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="name" name="name" placeholder="Enter name of referee" required>
+                        </td>
+                        <td>
+                            <input type="text" id="rcompany" name="rcompany" placeholder="Enter company of referee" required>
+                        </td>
+                        <td>
+                            <input type="text" id="title" name="title" placeholder="Enter position of referee" required>
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email" placeholder="Enter email of referee" required>
+                        </td>
+                        <td>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter tel. number of referee" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="name" name="name" placeholder="Enter name of referee">
+                        </td>
+                        <td>
+                            <input type="text" id="rcompany" name="rcompany" placeholder="Enter company of referee">
+                        </td>
+                        <td>
+                            <input type="text" id="title" name="title" placeholder="Enter position of referee">
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email" placeholder="Enter email of referee">
+                        </td>
+                        <td>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter tel. number of referee">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Next of Kin</legend>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>
+                            <label for="name">Name</label>
+                        </th>
+                        <th>
+                            <label for="relationship">Relationship</label>
+                        </th>
+                        <th>
+                            <label for="address">Address</label>
+                        </th>
+                        <th>
+                            <label for="email">Email</label>
+                        </th>
+                        <th>
+                            <label for="phone">Phone Number</label>
+                        </th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="text" id="name" name="name" placeholder="Enter name" required>
+                        </td>
+                        <td>
+                            <input type="text" id="relationship" name="relationship" placeholder="What is your relationship with the contact person?" required>
+                        </td>
+                        <td>
+                            <input type="text" id="address" name="address" placeholder="Enter address" required>
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email" placeholder="Enter email of next of kin" required>
+                        </td>
+                        <td>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter valid tel. number" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="name" name="name" placeholder="Enter name">
+                        </td>
+                        <td>
+                            <input type="text" id="relationship" name="relationship" placeholder="What is your relationship with the contact person?">
+                        </td>
+                        <td>
+                            <input type="text" id="address" name="address" placeholder="Enter address">
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email" placeholder="Enter email of next of kin">
+                        </td>
+                        <td>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter valid tel. number">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <br><br>
+        <input type="submit" value="Register">
+        <button type="reset">Reset</button>
+    </form>
+    <div id="form-message" class="hidden"></div>
+    <footer>
+        <p>&copy 2025</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
